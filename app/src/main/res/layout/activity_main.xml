@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.adman.regestrationform.MainActivity">
+
+    <TextView
+        android:text="USER INTERFACE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textStyle="normal|bold|italic"
+        android:textSize="30sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="USERNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textAlignment="textStart" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/password"
+        android:text="ENTER PASSWORD"
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+    <CheckBox
+        android:text="YES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:id="@+id/checkBox"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:text="NO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginTop="21dp"
+        android:id="@+id/checkBox2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="ALLOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:layout_below="@+id/password"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="13dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="REGESTER HERE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/checkBox2"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textSize="24sp"
+        android:onClick="login"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+</RelativeLayout>
